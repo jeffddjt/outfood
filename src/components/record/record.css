@@ -1,0 +1,33 @@
+.contentBox{
+    position: absolute;
+    left:20px;
+    top:20px;
+    right:20px;
+    bottom:20px;
+    box-sizing: border-box;
+    padding: 5px;
+    overflow-y: auto;
+
+}
+.contentBox::-webkit-scrollbar{
+    width:5px;
+    height:1px;
+}
+
+.contentBox::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background:#e8e8e8;
+}
+.contentBox::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: #fff;
+}
+.rotate{
+    display: block;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}

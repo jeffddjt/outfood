@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    font-family: "Microsoft Yahei";
+}
+html,body{
+    width:100%;
+    height: 100%; 
+    font-size: 12px;   
+    display:flex;
+}
+
+.container{
+    background: url("../images/back_login.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    position: absolute;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+.login_box{
+    display:flex;
+    color:#2c3e50;
+    margin-top:-50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.login_box .logo{
+    height:10rem;
+    width:9rem;
+    display: block;
+}
+.login{
+    height:40vh;
+    width:30vw;
+    min-width: 250px;
+    min-height: 300px;
+    background: #2d59c5;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:100%;
+    height:34%;
+}
+.content span{
+    font-size: 1.35rem;
+    color:#fff;
+    margin-left:5%;
+}
+.content input{
+    width:85%;
+    height:40%;
+    margin-left:5%;
+    font-size: 1.35rem;
+    padding-left: 10px;
+    
+}
+.button_container{
+    width:100%;
+    height:34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_container button{
+
+    height:40%;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+    border-radius: 5px;
+    background: #fea100;
+    color:#fff;
+    line-height: 1;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    -webkit-appearance: none;
+    font-weight: 500;
+    outline: 0;
+    border: 1px solid #dcdfe6;
+    border-color: #e6a23c;
+    cursor: pointer;
+}
+button:hover{
+    background: #ebb563;
+    border-color:#ebb563;
+    color:#fff;
+}
+.alert{
+    width:400px;
+    height:80px;
+    position: absolute;
+    border:1px solid #fda2a2;    
+    background: #fde2e2;
+    left:calc(50% - 200px);
+    top:-100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px #a0a0a0;
+    line-height: 1;
+    font-size: 1.35rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color:red;  
+
+
+}

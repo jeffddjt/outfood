@@ -1,0 +1,25 @@
+
+.searchbar{
+    display:flex;
+    align-items: center;   
+}
+
+.searchbar .selector{
+    margin-left: 5px;
+    width:40px;
+    height: 25px;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 0.5px 0.5px 5px #888;    
+}
+.searchbar .data_active{
+    background:#003e8a;
+    color:#fff;
+}
+.searchbar input[type=text]{
+    width:80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}

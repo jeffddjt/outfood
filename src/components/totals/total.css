@@ -1,0 +1,94 @@
+.tabs .chart{
+    width:900px;
+    height:300px;
+    display: flex;
+    font-size: 0.3rem;
+
+}
+.tabs .chartBox{
+    margin-top:20px;
+    border:1px solid silver;
+    width:100%;
+}
+.tabs .chartBox .charttitle{
+    height: 80px;
+    display:flex;
+    font-size: 1.35rem;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.tabs .chartBox .charttitle div:first-child{
+    height:40px;
+    width:100%;
+    font-weight: 500;
+    margin-left:15px;
+    display: flex;
+    align-items: center;
+}
+.dateselector{
+    width:100%;
+    height:40px;
+    font-size:0.9rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dateselector span:first-child{
+    margin-left: 15px;
+}
+.radiogroup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.radiogroup .date{
+    border:1px solid silver;
+    height:25px;
+    width:50px;
+    display:block;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.radiogroup .date:first-child{
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.radiogroup .date:nth-child(3){
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.radiogroup .active{
+    background:#409eff;
+    color:#fff;
+    border-color: #409eff;
+}
+
+.chartTable{
+    min-width: 750px;
+    width:100%;
+    font-size: 0.9rem;
+}
+.chartTable th{
+    background:#f3f3f3;
+    color:#000;
+    height:30px;
+    border-bottom: 1px solid #c0c0c0;
+    text-align: center;
+    
+}
+.chartTable td{
+    background:#fcfcfc;
+    height:30px;
+    border-bottom: 1px solid #c0c0c0;
+    text-align: center;
+}
+

@@ -1,0 +1,24 @@
+
+.searchbar{
+    display:flex;
+    align-items: center;   
+}
+
+.searchbar .selector{
+    margin-left: 5px;
+    width:40px;
+    height: 25px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 0.5px 0.5px 5px #888;    
+}
+.searchbar .data_active{
+    background:#003e8a;
+    color:#fff;
+}
+.searchbar .dateSelector{
+
+    margin-left: 5px;
+    cursor: pointer;
+}
