@@ -68,7 +68,6 @@ class EnforcementTotal extends Component {
     }
 
     getDistrictPieData() {
-        //var platform=[{name:"美团外卖",value:4535},{name:"百度外卖",value:753},{name: "饿了么",value:389}];
         var series = [{
             name: '辖区名称',
             type: 'pie',
@@ -82,7 +81,6 @@ class EnforcementTotal extends Component {
         return series;
     }
     getDistrictPieAddedData() {
-        //var platform=[{name:"美团外卖",value:4535},{name:"百度外卖",value:753},{name: "饿了么",value:389}];
         var series = [{
             name: '辖区名称',
             type: 'pie',
