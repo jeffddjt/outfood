@@ -4,6 +4,7 @@ import Banner from "./banner";
 import SearchBox from "./searchbox";
 import { list } from "./district.json";
 import Pager from "../pager";
+import Detail from "./detail";
 
 
 class Issus extends React.Component {
@@ -13,13 +14,17 @@ class Issus extends React.Component {
        this.state={
          pageNo:1,
          pageCount:10,
-         total:5677
+         total:5677,
+         customerID:0
        };
    }
 
     getDetail(id){
-            this.props.getDetail(id);
+        this.setState({customerID:id});
 
+    }
+    cancel(){
+        this.setState({customerID:0});
     }
 
     pagerClick(pageNo){
@@ -27,8 +32,11 @@ class Issus extends React.Component {
     }
 
     render() {
-        return (
-            <div className="contentBox">
+        var content=
+        this.state.customerID!==0?
+                <Detail cancel={this.cancel.bind(this)}/>
+                :
+                <div className="contentBox">
                 <h3 style={{ fontSize: "1.5rem", display: "block",fontWeight:"bold" }}>商家具体问题展示</h3>
                 <h4>
                     {/* eslint-disable-next-line */}
@@ -82,9 +90,9 @@ class Issus extends React.Component {
                     <Pager pageCount={this.state.pageCount} pageNo={this.state.pageNo} total={this.state.total} onClick={this.pagerClick.bind(this)}/>
 
                 </div>
+            </div>;
 
-            </div>
-        );
+        return content;
     }
 }
 

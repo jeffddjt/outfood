@@ -25,6 +25,7 @@ class Admin extends React.Component {
     }
 
     render() {
+
         return (
             <div className="main">
                 <div className="leftcontent">
@@ -34,6 +35,7 @@ class Admin extends React.Component {
                     </div>
                     <span className="identity">系统管理人员</span>
                     <Sider nav={this.nav.bind(this)} />
+                    {/* <LeftMenu onNav={this.nav.bind(this)}/> */}
                 </div>
                 <div className="maincontent">
                     <div className="header">

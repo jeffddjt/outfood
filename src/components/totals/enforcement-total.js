@@ -136,16 +136,18 @@ class EnforcementTotal extends Component {
                     {/* tabs title end */}
 
                     {/* tab content */}
-                    <div className="tab" style={{display:this.state.activeForm===0?"block":"none"}}>
+                    {this.state.activeForm===0?
+                    <div className="tab">
                         <ChartBox title="平台查处统计" url="getPlatformDataWeek" chartData={this.getPlatformData()} pieData={this.getPlatformPieData()} chartType="line" />
                         <ChartBox title="平台份额占比" url="getPlatformDataWeek" chartData={this.getPlatformData()} pieData={this.getPlatformPieData()} chartType="bar" />
                     </div>
-
-                    <div className="tab" style={{display:this.state.activeForm===1?"block":"none"}}>
+                    :
+                    <div className="tab">
                         <ChartBox title="执法统计" url="getPlatformDataWeek" chartData={this.getDistrictData()} pieData={this.getDistrictPieData()} chartType="line" showTable={true} />
                         <ChartBox title="累计新增商家" url="getPlatformDataWeek" chartData={this.getDistrictAddedData()} pieData={this.getDistrictPieAddedData()} chartType="bar" showTable={true} />
                         <ChartBox title="累计减少商家" url="getPlatformDataWeek" chartData={this.getDistrictAddedData()} pieData={this.getDistrictPieAddedData()} chartType="bar" showTable={true} />
                     </div>
+                    }
 
                     {/* tab content end */}
 
